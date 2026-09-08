@@ -609,7 +609,6 @@ T2 --senha_correta--> Auth
 Auth --*--> Auth (loop para ambas entradas)
 Block --*--> Block (loop)
 
-Observação prática: dependendo da política, podemos colocar transições de Auth para S0 se logout ocorrer — não especificado no enunciado.
 
 ---
 
@@ -652,7 +651,7 @@ AFD escolhido para implementação: Exercício 9 (requerido pelo enunciado: esco
 | 0000 | ACEITA | ACEITA | q0->q1->q2->q2->q2 |
 | 01 | REJEITA | REJEITA | q0->q1->q0 |
 
-Obs.: Se desejar, posso gerar os arquivos .jff e commitar no repositório com estes nomes; diga se quer que eu faça isso.
+
 
 ---
 
