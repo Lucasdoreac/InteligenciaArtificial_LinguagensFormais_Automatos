@@ -1,11 +1,11 @@
-# Exercícios Comentados — Aulas 01 e 02estudante
+# Exercícios Comentados — Aulas 01 e 02
 
 ## Linguagens Formais, Alfabeto, Linguagens e Gramáticas
 
 **Disciplina:** Linguagens Formais e Autômatos
 **Objetivo:** revisar os conceitos fundamentais de **alfabeto, palavras, linguagens e gramáticas**, desenvolvendo também a capacidade de interpretar e ler a notação matemática.
 
-> **Orientação ao estudante:** primeiro leia e compreenda o exercício comentado. Em seguida, tente resolver o exercício proposto sem consultar o gabarito. Ao final do material, confira suas respostas.
+> **Orientação ao estudante:** primeiro leia e compreenda o exercício comentado. Em seguida, tente resolver o exercício proposto sem consultar o gabarito. Ao final do material, confira suas respostas no gabarito.
 
 ---
 
@@ -16,7 +16,7 @@
 Considere o conjunto:
 
 $$
-\Sigma = {0,1}
+\Sigma = \{0,1\}
 $$
 
 **Pergunta:** o que significa esse conjunto?
@@ -30,7 +30,7 @@ Um alfabeto é um conjunto finito de símbolos que podem ser utilizados para con
 Neste caso:
 
 $$
-\Sigma = {0,1}
+\Sigma = \{0,1\}
 $$
 
 O alfabeto possui dois símbolos:
@@ -77,18 +77,18 @@ O segundo é uma sequência de símbolos, ou seja, uma **palavra**.
 Considere:
 
 $$
-\Sigma = {a,b,c}
+\Sigma = \{a,b,c\}
 $$
 
 Responda:
 
 1. Quantos símbolos existem no alfabeto?
 
-R: 3 Simbolos
+R: 3 símbolos.
 
 2. Quais são os símbolos?
 
-R: Letras "a", "b" e "c" minúsculas.
+R: Letras `a`, `b` e `c` minúsculas.
 
 3. O símbolo `a` pertence ao alfabeto?
 
@@ -99,7 +99,9 @@ R: Sim.
 R: Não.
 
 5. Escreva uma palavra formada por símbolos desse alfabeto.
-R: "babaca".
+
+R: `babaca`.
+
 ---
 
 # 2. Palavras sobre um alfabeto
@@ -109,7 +111,7 @@ R: "babaca".
 Considere:
 
 $$
-\Sigma = {a,b}
+\Sigma = \{a,b\}
 $$
 
 Verifique quais das sequências abaixo são palavras construídas sobre esse alfabeto:
@@ -128,7 +130,7 @@ Uma **palavra** é uma sequência finita de símbolos pertencentes ao alfabeto.
 Nosso alfabeto é:
 
 $$
-\Sigma = {a,b}
+\Sigma = \{a,b\}
 $$
 
 ### Palavra `abba`
@@ -186,7 +188,7 @@ b a a b
 Todos os símbolos pertencem a:
 
 $$
-\Sigma = {a,b}
+\Sigma = \{a,b\}
 $$
 
 Logo:
@@ -212,18 +214,18 @@ $$
 Considere:
 
 $$
-\Sigma = {0,1}
+\Sigma = \{0,1\}
 $$
 
 Classifique cada sequência como **palavra válida** ou **não válida**:
 
 | Sequência | Válida? | Justificativa |
 | --------- | ------- | ------------- |
-| `0101`    |    S    |      ambos pertencem ao conjunto         |
-| `00110`   |    S    |      ambos pertencem ao conjunto         |
-| `012`     |    N    |      2 Não Pertence        |
-| `111`     |    S    |         1 Pertence         |
-| `10a`     |    N    |     "a" não pertence       |
+| `0101`    | Sim     | Todos os símbolos são `0` ou `1` |
+| `00110`   | Sim     | Todos os símbolos são `0` ou `1` |
+| `012`     | Não     | O símbolo `2` não pertence ao alfabeto |
+| `111`     | Sim     | Todos os símbolos pertencem ao alfabeto |
+| `10a`     | Não     | O símbolo `a` não pertence ao alfabeto |
 
 ---
 
@@ -234,7 +236,7 @@ Classifique cada sequência como **palavra válida** ou **não válida**:
 Considere:
 
 $$
-\Sigma = {a,b,c}
+\Sigma = \{a,b,c\}
 $$
 
 Determine se:
@@ -338,23 +340,18 @@ O segundo representa uma **palavra**.
 Considere:
 
 $$
-\Sigma = {0,1}
+\Sigma = \{0,1\}
 $$
 
 Determine se as afirmações são **verdadeiras ou falsas**:
 
-1. $0 \in \Sigma$
-R: V
-2. $1 \in \Sigma$
-R: V
-3. $01 \in \Sigma$
-R: F - "palavra não letra"
-4. $01 \in \Sigma^*$
-R: V 
-5. $2 \in \Sigma$
-R: F
-6. $101 \in \Sigma^*$
-R: V
+1. $0 \in \Sigma$ — Verdadeiro.
+2. $1 \in \Sigma$ — Verdadeiro.
+3. $01 \in \Sigma$ — Falso ("01" é uma palavra, não um símbolo individual).
+4. $01 \in \Sigma^*$ — Verdadeiro.
+5. $2 \in \Sigma$ — Falso.
+6. $101 \in \Sigma^*$ — Verdadeiro.
+
 Justifique cada resposta.
 
 ---
@@ -366,13 +363,13 @@ Justifique cada resposta.
 Considere:
 
 $$
-\Sigma = {a,b}
+\Sigma = \{a,b\}
 $$
 
 e a linguagem:
 
 $$
-L = {a,ab,abb}
+L = \{a,ab,abb\}
 $$
 
 ### O que é $L$?
@@ -400,7 +397,7 @@ $$
 Observe a linguagem:
 
 $$
-L = {a,ab,abb}
+L = \{a,ab,abb\}
 $$
 
 A palavra `ab` aparece no conjunto.
@@ -454,23 +451,18 @@ Lemos:
 Considere:
 
 $$
-L = {0,01,011,0111}
+L = \{0,01,011,0111\}
 $$
 
 Determine se cada palavra pertence à linguagem:
 
-1. $0 \in L$
-R: V
-2. $01 \in L$
-R: V
-3. $0111 \in L$
-R: V
-4. $10 \in L$
-R: F
-5. $111 \in L$
-R: F
-6. $011 \in L$
-R: v
+1. $0 \in L$ — Sim.
+2. $01 \in L$ — Sim.
+3. $0111 \in L$ — Sim.
+4. $10 \in L$ — Não.
+5. $111 \in L$ — Não.
+6. $011 \in L$ — Sim.
+
 ---
 
 # 5. Descrevendo uma linguagem por padrão
@@ -480,7 +472,7 @@ R: v
 Considere:
 
 $$
-L = {a,aa,aaa,aaaa,\ldots}
+L = \{a,aa,aaa,aaaa,\ldots\}
 $$
 
 Qual é o padrão dessa linguagem?
@@ -505,7 +497,7 @@ A quantidade de `a` pode aumentar indefinidamente.
 Podemos representar essa linguagem por:
 
 $$
-L = {a^n \mid n \geq 1}
+L = \{a^n \mid n \geq 1\}
 $$
 
 ### Como se lê?
@@ -555,7 +547,7 @@ pode ser lido como:
 Assim:
 
 $$
-{a^n \mid n \geq 1}
+\{a^n \mid n \geq 1\}
 $$
 
 pode ser lido:
@@ -569,20 +561,20 @@ pode ser lido:
 Considere:
 
 $$
-L = {b^n \mid n \geq 1}
+L = \{b^n \mid n \geq 1\}
 $$
 
 1. Escreva as cinco primeiras palavras.
-R: b, bb, bbb, bbbb, bbbbbb.
+R: b, bb, bbb, bbbb, bbbbb.
 
 2. Explique o significado de $b^n$.
-R:  B quantas vezes houverem.
+R: $b^n$ representa n ocorrências do símbolo $b$.
 
 3. A palavra `bbbbbb` pertence à linguagem?
-R: Sim.
+R: Sim (é $b^6$). 
 
 4. A palavra vazia ($\varepsilon$) pertence à linguagem?
-R: Sim.
+R: Não (a linguagem exige $n\geq1$, então $\varepsilon = b^0$ não pertence).
 
 ---
 
@@ -635,7 +627,7 @@ representa uma palavra que possui **zero símbolos**.
 Uma linguagem que contém somente a palavra vazia é:
 
 $$
-L = {\varepsilon}
+L = \{\varepsilon\}
 $$
 
 Essa linguagem possui **uma palavra**.
@@ -645,7 +637,7 @@ Essa palavra possui comprimento zero.
 Portanto:
 
 $$
-\emptyset \neq {\varepsilon}
+\emptyset \neq \{\varepsilon\}
 $$
 
 ### Como se lê?
@@ -681,18 +673,16 @@ $$
 ### B
 
 $$
-L={\varepsilon}
+L=\{\varepsilon\}
 $$
-R:
-∅ = representa um conjunto que não possui elementos. A linguagem não possui nenhuma palavra.
-ε = representa uma palavra que possui zero símbolos. Essa linguagem possui uma palavra. Essa palavra possui comprimento zero.
 
+R: $\emptyset$ representa um conjunto que não possui elementos. A linguagem não possui nenhuma palavra. $\varepsilon$ representa uma palavra que possui zero símbolos. A linguagem $\{\varepsilon\}$ possui exatamente uma palavra (a palavra vazia), cujo comprimento é zero.
 
 Depois responda:
 
-1. Qual delas possui uma palavra?
-2. Qual delas não possui nenhuma palavra?
-3. Qual é o comprimento da palavra $\varepsilon$?
+1. Qual delas possui uma palavra? — B ($\{\varepsilon\}$).
+2. Qual delas não possui nenhuma palavra? — A ($\emptyset$).
+3. Qual é o comprimento da palavra $\varepsilon$? — $|\varepsilon| = 0$.
 
 ---
 
@@ -709,17 +699,17 @@ $$
 com:
 
 $$
-V={S}
+V=\{S\}
 $$
 
 $$
-T={a,b}
+T=\{a,b\}
 $$
 
 e:
 
 $$
-P={S\rightarrow aS,\ S\rightarrow b}
+P=\{S\rightarrow aS,\ S\rightarrow b\}
 $$
 
 ### O que significa cada componente?
@@ -735,7 +725,7 @@ $$
 Temos:
 
 $$
-V={S}
+V=\{S\}
 $$
 
 O símbolo `S` será utilizado durante a derivação.
@@ -745,7 +735,7 @@ O símbolo `S` será utilizado durante a derivação.
 Temos:
 
 $$
-T={a,b}
+T=\{a,b\}
 $$
 
 Os terminais são os símbolos que podem aparecer na palavra final.
@@ -755,7 +745,7 @@ Os terminais são os símbolos que podem aparecer na palavra final.
 Temos:
 
 $$
-P={S\rightarrow aS,\ S\rightarrow b}
+P=\{S\rightarrow aS,\ S\rightarrow b\}
 $$
 
 São as regras utilizadas para transformar ou substituir os não terminais.
@@ -787,13 +777,13 @@ Pode ser lido:
 Considere:
 
 $$
-G= ({S,A},{0,1},P,S)
+G= (\{S,A\},\{0,1\},P,S)
 $$
 
 com:
 
 $$
-P={S\rightarrow0A,\ A\rightarrow1}
+P=\{S\rightarrow0A,\ A\rightarrow1\}
 $$
 
 Identifique:
@@ -1195,12 +1185,12 @@ $$
 
 Determine se cada palavra pode ser gerada:
 
-1. `1`
-2. `01`
-3. `001`
-4. `0001`
-5. `101`
-6. `1001`
+1. `1` — Sim (S→1).
+2. `01` — Sim (S⇒0S⇒01).
+3. `001` — Sim (S⇒0S⇒00S⇒001).
+4. `0001` — Sim (S⇒0S⇒00S⇒000S⇒0001).
+5. `101` — Não.
+6. `1001` — Não.
 
 Para as palavras que podem ser geradas, apresente a derivação completa.
 
@@ -1208,508 +1198,7 @@ Para as palavras que podem ser geradas, apresente a derivação completa.
 
 # Gabarito Comentado
 
-## Exercício 1
-
-Considere:
-
-$$
-\Sigma={a,b,c}
-$$
-
-### Respostas
-
-1. O alfabeto possui **3 símbolos**.
-2. Os símbolos são:
-
-$$
-a,\ b,\ c
-$$
-
-3. Sim:
-
-$$
-a\in\Sigma
-$$
-
-4. Não:
-
-$$
-d\notin\Sigma
-$$
-
-5. Exemplos de palavras válidas:
-
-```text
-a
-ab
-abc
-bca
-cab
-```
-
-### Comentário
-
-Uma palavra pode possuir um ou vários símbolos, desde que todos pertençam ao alfabeto.
-
----
-
-# Exercício 2
-
-Para:
-
-$$
-\Sigma={0,1}
-$$
-
-| Sequência | Resposta   | Justificativa                           |
-| --------- | ---------- | --------------------------------------- |
-| `0101`    | Válida     | Todos os símbolos são `0` ou `1`        |
-| `00110`   | Válida     | Todos os símbolos são `0` ou `1`        |
-| `012`     | Não válida | `2` não pertence ao alfabeto            |
-| `111`     | Válida     | Todos os símbolos pertencem ao alfabeto |
-| `10a`     | Não válida | `a` não pertence ao alfabeto            |
-
----
-
-# Exercício 3
-
-Para:
-
-$$
-\Sigma={0,1}
-$$
-
-### 1.
-
-$$
-0\in\Sigma
-$$
-
-**Verdadeiro.**
-
-### 2.
-
-$$
-1\in\Sigma
-$$
-
-**Verdadeiro.**
-
-### 3.
-
-$$
-01\in\Sigma
-$$
-
-**Falso.**
-
-`01` é uma palavra, não um símbolo individual.
-
-### 4.
-
-$$
-01\in\Sigma^*
-$$
-
-**Verdadeiro.**
-
-### 5.
-
-$$
-2\in\Sigma
-$$
-
-**Falso.**
-
-### 6.
-
-$$
-101\in\Sigma^*
-$$
-
-**Verdadeiro.**
-
-Todos os símbolos de `101` pertencem ao alfabeto.
-
----
-
-# Exercício 4
-
-Para:
-
-$$
-L={0,01,011,0111}
-$$
-
-| Palavra | Pertence a $L$? |
-| ------- | --------------- |
-| `0`     | Sim             |
-| `01`    | Sim             |
-| `0111`  | Sim             |
-| `10`    | Não             |
-| `111`   | Não             |
-| `011`   | Sim             |
-
-### Comentário
-
-Uma palavra pertence à linguagem quando ela é um dos elementos definidos no conjunto.
-
----
-
-# Exercício 5
-
-$$
-L={b^n\mid n\geq1}
-$$
-
-As cinco primeiras palavras são:
-
-```text
-b
-bb
-bbb
-bbbb
-bbbbb
-```
-
-O símbolo:
-
-$$
-b^n
-$$
-
-representa `n` ocorrências de `b`.
-
-A palavra:
-
-```text
-bbbbbb
-```
-
-possui seis `b`.
-
-Logo:
-
-$$
-bbbbbb=b^6
-$$
-
-e:
-
-$$
-bbbbbb\in L
-$$
-
-Já:
-
-$$
-\varepsilon\notin L
-$$
-
-porque a condição determina:
-
-$$
-n\geq1
-$$
-
----
-
-# Exercício 6
-
-### A
-
-$$
-L=\emptyset
-$$
-
-Não possui nenhuma palavra.
-
-### B
-
-$$
-L={\varepsilon}
-$$
-
-Possui exatamente uma palavra:
-
-$$
-\varepsilon
-$$
-
-Essa palavra possui comprimento:
-
-$$
-|\varepsilon|=0
-$$
-
-### Resposta
-
-$$
-\boxed{\emptyset\neq{\varepsilon}}
-$$
-
----
-
-# Exercício 7
-
-Considere:
-
-$$
-G=({S,A},{0,1},P,S)
-$$
-
-com:
-
-$$
-P={S\rightarrow0A,\ A\rightarrow1}
-$$
-
-### Respostas
-
-**Variáveis:**
-
-$$
-V={S,A}
-$$
-
-**Terminais:**
-
-$$
-T={0,1}
-$$
-
-**Produções:**
-
-$$
-P={S\rightarrow0A,\ A\rightarrow1}
-$$
-
-**Símbolo inicial:**
-
-$$
-S
-$$
-
-### Palavra gerada
-
-Começamos:
-
-$$
-S
-$$
-
-Aplicamos:
-
-$$
-S\rightarrow0A
-$$
-
-Então:
-
-$$
-S\Rightarrow0A
-$$
-
-Agora:
-
-$$
-A\rightarrow1
-$$
-
-Logo:
-
-$$
-0A\Rightarrow01
-$$
-
-Portanto:
-
-$$
-\boxed{01}
-$$
-
----
-
-# Exercício 8
-
-Aplicando:
-
-$$
-S\rightarrow0S
-$$
-
-três vezes:
-
-$$
-S
-\Rightarrow0S
-\Rightarrow00S
-\Rightarrow000S
-$$
-
-### Resposta
-
-$$
-\boxed{000S}
-$$
-
-### Atenção
-
-A derivação ainda não terminou porque existe o não terminal:
-
-$$
-S
-$$
-
----
-
-# Exercício 9
-
-Para gerar:
-
-```text
-aaab
-```
-
-temos:
-
-$$
-S
-\Rightarrow aS
-\Rightarrow aaS
-\Rightarrow aaaS
-\Rightarrow aaab
-$$
-
-Portanto:
-
-$$
-\boxed{aaab\in L(G)}
-$$
-
-### Como pensar?
-
-Cada aplicação:
-
-$$
-S\rightarrow aS
-$$
-
-adiciona um `a`.
-
-Quando já temos a quantidade necessária de `a`, utilizamos:
-
-$$
-S\rightarrow b
-$$
-
-para finalizar.
-
----
-
-# Exercício 10
-
-Gramática:
-
-$$
-G:
-\begin{cases}
-S\rightarrow0S\
-S\rightarrow1
-\end{cases}
-$$
-
-### 1. `1`
-
-Sim:
-
-$$
-S\Rightarrow1
-$$
-
-### 2. `01`
-
-Sim:
-
-$$
-S\Rightarrow0S\Rightarrow01
-$$
-
-### 3. `001`
-
-Sim:
-
-$$
-S\Rightarrow0S\Rightarrow00S\Rightarrow001
-$$
-
-### 4. `0001`
-
-Sim:
-
-$$
-S\Rightarrow0S
-\Rightarrow00S
-\Rightarrow000S
-\Rightarrow0001
-$$
-
-### 5. `101`
-
-Não.
-
-Depois que utilizamos:
-
-$$
-S\rightarrow1
-$$
-
-a derivação termina.
-
-Não é possível produzir outro `0` ou `1`.
-
-### 6. `1001`
-
-Não.
-
-A gramática permite:
-
-```text
-zero ou mais 0
-+
-um 1 final
-```
-
-Portanto, palavras válidas possuem o formato:
-
-```text
-000...001
-```
-
-A palavra `1001` começa com `1` e depois possui outros símbolos, o que não é permitido.
-
----
-
-# Resumo dos conceitos
-
-| Conceito           | Significado                                                           |
-| ------------------ | --------------------------------------------------------------------- |
-| $\Sigma$           | Alfabeto                                                              |
-| `a`, `b`, `0`, `1` | Símbolos                                                              |
-| $w$                | Palavra                                                               |
-| $L$                | Linguagem                                                             |
-| $\Sigma^*$         | Conjunto de todas as palavras sobre $\Sigma$, incluindo $\varepsilon$ |
-| $\varepsilon$      | Palavra vazia                                                         |
-| $\emptyset$        | Conjunto vazio                                                        |
-| $w\in L$           | A palavra $w$ pertence à linguagem                                    |
-| $w\notin L$        | A palavra $w$ não pertence à linguagem                                |
-| $G$                | Gramática                                                             |
-| $V$                | Variáveis/não terminais                                               |
-| $T$                | Terminais                                                             |
-| $P$                | Produções                                                             |
-| $S$                | Símbolo inicial                                                       |
-| $\rightarrow$      | Produção/regra                                                        |
-| $\Rightarrow$      | Derivação                                                             |
+(As respostas e comentários aos exercícios acima estão incluídos nas seções correspondentes.)
 
 ---
 
@@ -1738,7 +1227,7 @@ Antes de avançar para os próximos conteúdos, verifique se você consegue:
 Considere:
 
 $$
-G:
+G:\
 \begin{cases}
 S\rightarrow aS\
 S\rightarrow b
