@@ -1,0 +1,7 @@
+# Sincronização com upstream iniciada
+# Branch: sync/upstream-merge
+# Data: 2026-09-09
+
+git remote add upstream https://github.com/Kadidjah/InteligenciaArtifical_LinguagensFormais_Automatos.git
+git fetch upstream
+git merge upstream/main --allow-unrelated-histories
