@@ -1,0 +1,20 @@
+# Maquina de Turing para 0^n 1^n (n >= 1) — cole em https://turingmachine.io/ e clique em "Load machine"
+input: '0011'
+blank: ' '
+start state: q0
+table:
+  q0:
+    '0': {write: X, R: q1}
+    Y: {write: Y, R: q3}
+  q1:
+    '0': R
+    Y: R
+    '1': {write: Y, L: q2}
+  q2:
+    '0': L
+    Y: L
+    X: {R: q0}
+  q3:
+    Y: R
+    ' ': {R: qA}
+  qA:
