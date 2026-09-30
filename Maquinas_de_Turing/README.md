@@ -8,5 +8,6 @@ Atividade remota de Linguagens Formais e Autômatos (Prof.ª Kadidja Valéria), 
 | [`maquina.yaml`](maquina.yaml) | O mesmo programa, pronto para colar no simulador |
 | [`registro_dos_testes.md`](registro_dos_testes.md) | Três testes (2 aceitos, 1 rejeitado) com estados percorridos e capturas de tela |
 | [`prints/`](prints/) | Capturas da simulação |
+| [`Atividade_Maquinas_de_Turing_Deivid_Cerqueira.pdf`](Atividade_Maquinas_de_Turing_Deivid_Cerqueira.pdf) | Relatório completo do Deivid Cerqueira (Etapas 1 a 4), com as capturas das 3 simulações no turingmachine.io em anexo |
 
-As respostas da Etapa 1 e a reflexão sobre os limites computacionais seguem no arquivo único de entrega, não neste repositório.
+As respostas da Etapa 1 e a reflexão sobre os limites computacionais deste registro seguem no arquivo único de entrega, não neste repositório. O relatório completo do Deivid está no PDF acima.
